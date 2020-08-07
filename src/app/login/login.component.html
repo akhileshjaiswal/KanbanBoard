@@ -1,0 +1,32 @@
+<mat-card *ngIf='login_page'>
+    <mat-card-title>Login</mat-card-title>
+    <form>
+        <mat-form-field class="form-input">
+            <mat-label>Username</mat-label>
+            <input type="text" matInput placeholder="Enter Username">
+        </mat-form-field>
+        <mat-form-field class="form-input">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput placeholder="Enter Password">
+        </mat-form-field>
+        <button routerLink='/kanban' mat-flat-button color='primary'>Login</button>
+    </form>
+    <a style="margin-left: 1.5em;cursor: pointer;" (click)='signup()'>Sign Up</a>
+    <a style="margin-left: 9em; cursor: pointer;">Forgot Password?</a>
+</mat-card>
+<mat-card *ngIf='signUp_page'>
+    <mat-card-title>Register</mat-card-title>
+    <form>
+        <mat-form-field class="form-input">
+            <mat-label>Username</mat-label>
+            <input type="text" matInput placeholder="Enter Username">
+        </mat-form-field>
+        <mat-form-field class="form-input">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput placeholder="Enter Password">
+        </mat-form-field>
+        <button (click)='login()' mat-flat-button color='primary'>Submit</button>
+    </form>
+    <a style="margin-left: 1.5em;cursor: pointer;" (click)='login()'>Login</a>
+    <a style="margin-left: 10em; cursor: pointer;">Forgot Password?</a>
+</mat-card>

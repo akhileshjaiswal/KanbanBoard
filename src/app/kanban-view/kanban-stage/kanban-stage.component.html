@@ -1,0 +1,4 @@
+<div style="padding: 0;cursor: pointer;" class="col-md-3">
+    <h5>{{stage.name}}</h5>
+    <app-kanban-card *ngFor='let card of stage.cards' [card]='card' (main_id)='dosome($event)'></app-kanban-card>
+</div>

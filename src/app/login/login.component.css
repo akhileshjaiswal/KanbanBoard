@@ -1,0 +1,27 @@
+mat-card {
+    width: 25em;
+    height: 22em;
+    margin-left: 35em;
+    margin-top: 10em;
+}
+
+.form-input {
+    width: 90%;
+    margin-left: 1.3em;
+}
+
+mat-card-title {
+    text-align: center;
+    margin-top: 1.5em !important;
+}
+
+button {
+    width: 80%;
+    margin-left: 2.5em;
+    margin-bottom: 1em;
+}
+
+a {
+    color: white;
+    /* margin-left: 13em; */
+}

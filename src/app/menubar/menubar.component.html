@@ -1,0 +1,14 @@
+<mat-toolbar color='primary'>
+    <span style="margin-left: 3.5em;"></span>
+    <span style="width: 3.3em;"><img src="../../assets/logo.png" alt="logo" style="width: 4.5em;"></span>
+    <span routerLink='/kanban' class="home">Kanban Board</span>
+    <span class="spacer"></span>
+    <button mat-icon-button title="Help" routerLink='/help'><mat-icon>help</mat-icon></button>
+    <button mat-icon-button title="Notifications"><mat-icon>notification_important</mat-icon></button>
+    <button mat-icon-button title="Profile" [matMenuTriggerFor]="menu"><img src="../../assets/employee.png" alt="" style="width: 2em;"></button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item><mat-icon style="margin-right: 5px;">face</mat-icon>Profile</button>
+        <button mat-menu-item routerLink='/login'><mat-icon style="margin-right: 5px;">reply</mat-icon>Logout</button>
+    </mat-menu>
+    <span style="margin-right: 4em;"></span>
+</mat-toolbar>

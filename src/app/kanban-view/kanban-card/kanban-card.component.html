@@ -1,0 +1,7 @@
+<mat-card [ngClass]="[cardStyle]" (click)='onCardSelect(card.id,card.card_id)'>
+    <mat-card-title title="{{card.name}}">
+        {{card.name}}
+    </mat-card-title>
+    <h4 title="{{card.category}}">{{card.category}}</h4>
+    <h5 title="{{card.time}}">{{card.time}}</h5>
+</mat-card>

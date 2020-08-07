@@ -1,0 +1,18 @@
+mat-card {
+    /* background-color: white; */
+    /* color: #303030; */
+    max-width: 80%;
+    border-top: 5px solid #c2185b;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.active {
+    border-top: 5px solid #a4a700;
+}
+
+h4,
+h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
